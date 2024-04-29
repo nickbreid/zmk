@@ -33,10 +33,15 @@
     #define _J_CMD &hm LGUI J
     #define _D_SFT &hm LSHFT D  // Shift on middle fingers
     #define _K_SFT &hm RSHFT K
-    #define _S_CTL &hm LCTRL S  // Control on index don
+    #define _S_CTL &hm LCTRL S  // Control on ring fingers
     #define _L_CTL &hm RCTRL L
-    #define _A_OPT &hm LALT A   // Option on ring finger
+    #define _A_OPT &hm LALT A   // Option on pinky fingers
     #define _SEMI_OPT &hm LALT SEMI
+    
+    #define DEFAULT 0
+    #define LOWER   1
+    #define RAISE   2
+
 
   keymap {
     compatible = "zmk,keymap";
@@ -45,7 +50,7 @@
       bindings = <
         &kp EQUAL &kp N1    &kp N2   &kp N3   &kp N4     &kp N5 &tog 1                                                           &mo 3 &kp N6 &kp N7 &kp N8    &kp N9   &kp N0   &kp MINUS
         &kp TAB   &kp Q     &kp W    &kp E    &kp R      &kp T  &none                                                            &none &kp Y  &kp U  &kp I     &kp O    &kp P    &kp BSLH
-        &kp ESC   _A_OPT     _S_CTL    _D_SFT    _F_CMD      &kp G  &none           &kp LCTRL &kp LALT &kp LGUI  &kp RCTRL           &none &kp H  _J_CMD  _K_SFT     _L_CTL    _SEMI_OPT &kp SQT
+        &kp ESC   _A_OPT     _S_CTL    _D_SFT    _F_CMD      &kp G  &none     &lt 1 MINUS &kp GRAVE &kp UNDER  &lt 2 EQUAL           &none &kp H  _J_CMD  _K_SFT     _L_CTL    _SEMI_OPT &kp SQT
         &kp LSHFT &kp Z     &kp X    &kp C    &kp V      &kp B                            &kp HOME &kp PG_UP                           &kp N  &kp M  &kp COMMA &kp DOT  &kp FSLH &kp ESC
         &mo 2     &kp GRAVE &kp CAPS &kp LEFT &kp RIGHT                &kp BSPC &kp DEL   &kp END  &kp PG_DN &kp ENTER &kp SPACE              &kp UP &kp DOWN  &kp LBKT &kp RBKT &mo 2
       >;
