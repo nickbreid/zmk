@@ -64,12 +64,21 @@
         &mo 2     &kp GRAVE &kp CAPS &kp LEFT &kp RIGHT                           &kp BSPC &kp DEL &kp END &kp PG_DN &kp ENTER &kp KP_N0              &kp UP     &kp DOWN     &kp KP_DOT    &kp RBKT        &mo 2
       >;
     };
-    fn {
+    arrow {
       bindings = <
         &kp F1 &kp F2 &kp F3 &kp F4 &kp F5 &kp F6 &tog 1                                           &mo 3 &kp F7 &kp F8 &kp F9 &kp F10 &kp F11 &kp F12
-        &trans &trans &trans &kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS &trans  &none                                           &none &trans &kp AMPERSAND &kp ASTERISK &trans  &trans  &trans
-        &trans &trans &trans &kp LEFT_BRACE &kp RIGHT_BRACE &trans  &none        &trans &trans &trans &trans        &none &trans &kp DOLLAR &kp PERCENT &kp CARET  &trans  &trans
-        &trans &trans &trans &kp LEFT_BRACKET &kp RIGHT_BRACKET &trans                      &trans &trans                     &trans &trans &kp EXCLAMATION &kp AT  &kp HASH  &trans
+        &trans &trans &trans &trans &trans &trans  &none                                           &none &trans &kp AMPERSAND &kp ASTERISK &trans  &trans  &trans
+        &trans &trans &trans &trans &trans &trans  &none        &trans &trans &trans &trans        &none &kp LEFT_ARROW &kp DOWN_ARROW &kp UP_ARROW &kp RIGHT_ARROW  &trans  &trans
+        &trans &trans &trans &trans &trans &tran                      &trans &trans                     &trans &kp EXCLAMATION &kp AT  &kp HASH  &trans &trans
+        &trans &trans &trans &trans &trans               &trans &trans &trans &trans &trans &trans              &trans &trans &trans  &trans  &trans
+      >;
+    };
+    symbol {
+      bindings = <
+        &kp F1 &kp F2 &kp F3 &kp F4 &kp F5 &kp F6 &tog 1                                           &mo 3 &kp F7 &kp F8 &kp F9 &kp F10 &kp F11 &kp F12
+        &trans &trans &trans &trans &trans &trans  &none                                           &none &trans &kp AMPERSAND &kp ASTERISK &trans  &trans  &trans
+        &trans &trans &trans &trans &trans &trans  &none        &trans &trans &trans &trans        &none &trans &kp DOLLAR &kp PERCENT &kp CARET  &trans  &trans
+        &trans &trans &trans &trans &trans &trans                      &trans &trans                     &trans &kp EXCLAMATION &kp AT  &kp HASH  &trans &trans
         &trans &trans &trans &trans &trans               &trans &trans &trans &trans &trans &trans              &trans &trans &trans  &trans  &trans
       >;
     };
