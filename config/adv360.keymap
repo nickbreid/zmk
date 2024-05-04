@@ -50,9 +50,9 @@
 
     default_layer {
       bindings = <
-        &kp EQUAL &kp N1    &kp N2   &kp N3   &kp N4     &kp N5 &tog 1                                                           &mo MOD &kp N6 &kp N7 &kp N8    &kp N9   &kp N0   &kp MINUS
-        &kp TAB   &kp Q     &kp W    &kp E    &kp R      &kp T  &none                                                            &none &kp Y  &kp U  &kp I     &kp O    &kp P    &kp BSLH
-        &kp ESC   _A_OPT     _S_CTL    _D_SFT    _F_CMD      &kp G  &none     &lt KEYPAD MINUS &lt SYMBOL GRAVE &kp UNDER  &lt ARROW EQUAL           &none &kp H  _J_CMD  _K_SFT     _L_CTL    _SEMI_OPT &kp SQT
+        &kp PLUS &kp GRAVE &kp LEFT_BRACKET &kp LEFT_BRACE &kp LEFT_PARENTHESIS &kp EQUAL &tog 1                                 &mo MOD &kp MINUS &kp RIGHT_PARENTHESIS &kp RIGHT_BRACE    &kp RIGHT_BRACKET   &kp UNDER   &kp TILDE
+        &kp TAB   &kp Q     &kp W    &kp E    &kp R      &kp T  &none                                                            &none   &kp Y     &kp U                 &kp I              &kp O               &kp P    &kp BSLH
+        &kp ESC   _A_OPT     _S_CTL    _D_SFT    _F_CMD      &lt KEYPAD G  &none     &lt KEYPAD MINUS &lt SYMBOL GRAVE &kp UNDER  &lt ARROW EQUAL           &none &kp H  _J_CMD  _K_SFT     _L_CTL    _SEMI_OPT &kp SQT
         &kp LSHFT &kp Z     &kp X    &kp C    &kp V      &kp B                            &kp HOME &kp PG_UP                           &kp N  &kp M  &kp COMMA &kp DOT  &kp FSLH &hm RSHFT ESC
         &mo SYMBOL     &kp GRAVE &kp CAPS &kp LEFT &kp RIGHT                &kp BSPC &kp DEL   &kp END  &kp PG_DN &kp ENTER &kp SPACE              &kp UP &kp DOWN  &kp LBKT &kp RBKT &mo SYMBOL
       >;
