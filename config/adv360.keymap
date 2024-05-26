@@ -26,6 +26,15 @@
           flavor = "tap-preferred";
           bindings = <&kp>, <&kp>;
       };
+      shm: homerow_mods {
+          compatible = "zmk,behavior-hold-tap";
+          label = "HOMEROW_MODS";
+          #binding-cells = <2>;
+          tapping-term-ms = <250>;
+          quick_tap_ms = <200>;
+          flavor = "tap-preferred";
+          bindings = <&kp>, <&kp>;
+      };
     };
 
     macros {
@@ -39,7 +48,7 @@
                 ;
         };
         prev_tmux_pane: prev_tmux_pane {
-            compatible = "zmk,behavior-macro";
+            compatible = "zmk,behavior-macro"r
             #binding-cells = <0>;
             bindings
                 = <&macro_press &kp LGUI>
@@ -56,12 +65,12 @@
     #define _K_SFT &hm RSHFT K
     #define _S_CTL &hm LCTRL S  // Control on ring fingers
     #define _L_CTL &hm RCTRL L
-    #define _A_OPT &hm LALT A   // Option on pinky fingers
-    #define _SEMI_OPT &hm LALT SEMI
+    #define _A_OPT &shm LALT A   // Option on pinky fingers
+    #define _SEMI_OPT &shm LALT SEMI
     
     #define DEFAULT 0
-    #define KEYPAD  1
-    #define ARROW   2
+    #define ARROW   1
+    #define KEYPAD  2
     #define SYMBOL  3
     #define MOD     4
 
@@ -72,7 +81,7 @@
 
     default_layer {
       bindings = <
-        &kp TILDE &kp GRAVE &kp LEFT_BRACKET &kp LEFT_BRACE &kp LEFT_PARENTHESIS &kp EQUAL &tog 1                                                                                     &mo MOD &kp MINUS &kp RIGHT_PARENTHESIS &kp RIGHT_BRACE    &kp RIGHT_BRACKET   &kp UNDER   &kp PLUS
+        &kp TILDE &kp GRAVE &kp LEFT_BRACKET &kp LEFT_BRACE &kp LEFT_PARENTHESIS &kp CARET &tog 1                                                                                     &mo MOD &kp DOLLAR &kp RIGHT_PARENTHESIS &kp RIGHT_BRACE    &kp RIGHT_BRACKET   &kp UNDER   &kp PLUS
         &kp TAB   &kp Q     &kp W    &kp E    &lt KEYPAD R      &kp T  &prev_tmux_pane                                                                                                              &next_tmux_pane &kp Y &lt SYMBOL U &kp I &kp O &kp P    &kp MINUS
         &kp EQUAL   _A_OPT     _S_CTL    _D_SFT    _F_CMD      &lt KEYPAD G  &kp LG(H)                    &lt KEYPAD EQUAL &lt SYMBOL GRAVE &kp UNDER  &lt ARROW MINUS                         &kp LG(L) &kp H  _J_CMD  _K_SFT     _L_CTL    _SEMI_OPT &kp SQT
         &kp LSHFT &kp Z     &kp X    &kp C    &kp V      &kp B                                                                   &kp HOME &kp PG_UP                                          &kp N  &kp M  &kp COMMA &kp DOT &kp FSLH &hm RSHFT ESC
