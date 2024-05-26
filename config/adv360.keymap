@@ -48,7 +48,7 @@
                 ;
         };
         prev_tmux_pane: prev_tmux_pane {
-            compatible = "zmk,behavior-macro"r
+            compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
                 = <&macro_press &kp LGUI>
