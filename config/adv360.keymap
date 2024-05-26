@@ -76,15 +76,15 @@
         &kp TAB   &kp Q     &kp W    &kp E    &lt KEYPAD R      &kp T  &prev_tmux_pane                                                                                                              &next_tmux_pane &kp Y &kp U &kp I &kp O &kp P    &kp MINUS
         &kp EQUAL   _A_OPT     _S_CTL    _D_SFT    _F_CMD      &lt KEYPAD G  &kp LG(H)                    &lt KEYPAD EQUAL &lt SYMBOL GRAVE &kp UNDER  &lt ARROW MINUS                         &kp LG(L) &kp H  _J_CMD  _K_SFT     _L_CTL    _SEMI_OPT &kp SQT
         &kp LSHFT &kp Z     &kp X    &kp C    &kp V      &kp B                                                                   &kp HOME &kp PG_UP                                          &kp N  &kp M  &kp COMMA &kp DOT &kp FSLH &hm RSHFT ESC
-        &mo SYMBOL     &kp GRAVE &kp CAPS &kp LEFT &kp RIGHT                                                     &kp BSPC &kp DEL &kp END &kp PG_DN &hm RSHFT ENTER &lt ARROW SPACE                 &kp DOLLAR &kp CARET  &kp LEFT_BRACKET  &kp BSLH &mo SYMBOL
+        &mo SYMBOL     &kp GRAVE &kp CAPS &kp LEFT &kp RIGHT                                                     &kp BSPC &kp DEL &kp END &kp PG_DN &hm RSHFT ENTER &lt ARROW SPACE                 &kp CARET &kp DOLLAR  &kp LEFT_BRACKET  &kp BSLH &mo SYMBOL
       >;
     };
     arrow {
       bindings = <
         &kp F1 &kp F2 &kp F3 &kp F4 &kp F5 &kp F6 &tog 1                                           &mo MOD &kp F7 &kp F8 &kp F9 &kp F10 &kp F11 &kp F12
-        &trans &trans &kp AMPERSAND &kp ASTERISK &trans &trans  &none                                           &none &trans &kp HOME &kp END &trans  &trans  &trans
-        &trans &trans &kp DOLLAR &kp PERCENT &kp CARET &trans  &none        &trans &trans &trans &trans        &none &kp LEFT_ARROW &kp DOWN_ARROW &kp UP_ARROW &kp RIGHT_ARROW  &trans  &trans
-        &trans &trans &kp EXCLAMATION &kp AT &kp HASH &trans                      &trans &trans                     &trans &kp CARET &kp DOLLAR  &trans  &trans &trans
+        &trans &trans &kp &trans &kp &trans &trans &trans  &none                                           &none &trans &kp &trans &kp &trans &trans  &trans  &trans
+        &trans &trans &kp &trans &kp &trans &kp &trans &trans  &none        &trans &trans &trans &trans        &none &kp LEFT_ARROW &kp DOWN_ARROW &kp UP_ARROW &kp RIGHT_ARROW  &trans  &trans
+        &trans &trans &kp &trans &kp &trans &kp &trans &trans                      &trans &trans                     &trans &kp &trans &kp &trans  &trans  &trans &trans
         &trans &trans &trans &trans &trans               &trans &trans &trans &trans &trans &trans              &trans &trans &trans  &trans  &trans
       >;
     };
@@ -100,8 +100,8 @@
     symbol {
       bindings = <
         &kp F1 &kp F2 &kp F3 &kp F4 &kp F5 &kp F6 &tog 1                                           &mo MOD &kp F7 &kp F8 &kp F9 &kp F10 &kp F11 &kp F12
-        &trans &trans &trans &trans &trans &trans  &none                                           &none &trans &kp AMPERSAND &kp ASTERISK &trans  &trans  &trans
-        &trans &trans &trans &trans &trans &trans  &none        &trans &trans &trans &trans        &none &trans &kp DOLLAR &kp PERCENT &kp CARET  &trans  &trans
+        &trans &PERCENT &CARET &AMPERSAND &ASTERISK &trans  &none                                           &none &trans &kp &trans &kp ASTERISK &trans  &trans  &trans
+        &trans &EXCLAMATION &AT &HASH &DOLLAR &trans  &none        &trans &trans &trans &trans        &none &trans &kp DOLLAR &kp PERCENT &kp CARET  &trans  &trans
         &trans &trans &trans &trans &trans &trans                      &trans &trans                     &trans &kp EXCLAMATION &kp AT  &kp HASH  &trans &trans
         &trans &trans &trans &trans &trans               &trans &trans &trans &trans &trans &trans              &trans &trans &trans  &trans  &trans
       >;
