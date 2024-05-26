@@ -72,19 +72,10 @@
     default_layer {
       bindings = <
         &kp TILDE &kp GRAVE &kp LEFT_BRACKET &kp LEFT_BRACE &kp LEFT_PARENTHESIS &kp EQUAL &tog 1                                                                                     &mo MOD &kp MINUS &kp RIGHT_PARENTHESIS &kp RIGHT_BRACE    &kp RIGHT_BRACKET   &kp UNDER   &kp PLUS
-        &kp TAB   &kp Q     &kp W    &kp E    &kp R      &kp T  &prev_tmux_pane                                                                                                              &next_tmux_pane &kp Y &kp U &kp I &kp O &kp P    &kp BSLH
-        &kp ESC   _A_OPT     _S_CTL    _D_SFT    _F_CMD      &lt KEYPAD G  &kp LG(H)                    &lt KEYPAD MINUS &lt SYMBOL GRAVE &kp UNDER  &lt ARROW EQUAL                         &kp LG(L) &kp H  _J_CMD  _K_SFT     _L_CTL    _SEMI_OPT &kp SQT
+        &kp TAB   &kp Q     &kp W    &kp E    &kp R      &kp T  &prev_tmux_pane                                                                                                              &next_tmux_pane &kp Y &kp U &kp I &kp O &kp P    &kp MINUS
+        &kp EQUAL   _A_OPT     _S_CTL    _D_SFT    _F_CMD      &lt KEYPAD G  &kp LG(H)                    &lt KEYPAD EQUAL &lt SYMBOL GRAVE &kp UNDER  &lt ARROW MINUS                         &kp LG(L) &kp H  _J_CMD  _K_SFT     _L_CTL    _SEMI_OPT &kp SQT
         &kp LSHFT &kp Z     &kp X    &kp C    &kp V      &kp B                                                                   &kp HOME &kp PG_UP                                          &kp N  &kp M  &kp COMMA &kp DOT &kp FSLH &hm RSHFT ESC
-        &mo SYMBOL     &kp GRAVE &kp CAPS &kp LEFT &kp RIGHT                                                     &kp BSPC &kp DEL &kp END &kp PG_DN &hm RSHFT ENTER &lt ARROW SPACE                 &kp UP &kp DOWN  &kp LBKT &kp RBKT &mo SYMBOL
-      >;
-    };
-    keypad {
-      bindings = <
-        &kp EQUAL &kp N1    &kp N2   &kp N3   &kp N4     &kp N5 &trans                                      &trans &kp N6 &kp KP_NUM &kp KP_EQUAL &kp KP_DIVIDE &kp KP_MULTIPLY &kp MINUS
-        &trans &trans &trans &trans &trans &trans  &none                                                    &none &trans  &kp KP_N7  &kp KP_N8    &kp KP_N9     &kp KP_MINUS    &trans
-        &trans &trans &trans &trans &trans &trans  &none               &trans &trans &trans &trans           &none &trans  &kp KP_N4  &kp KP_N5    &kp KP_N6     &kp KP_PLUS     &trans
-        &trans &trans &trans &trans &trans &trans                            &trans &trans                           &trans  &kp KP_N1  &kp KP_N2    &kp KP_N3     &kp KP_ENTER    &trans
-        &trans &trans &trans &trans &trans                   &trans &trans &trans &trans &trans &kp KP_N0              &trans     &trans     &kp KP_DOT    &trans        &trans
+        &mo SYMBOL     &kp GRAVE &kp CAPS &kp LEFT &kp RIGHT                                                     &kp BSPC &kp DEL &kp END &kp PG_DN &hm RSHFT ENTER &lt ARROW SPACE                 &kp DOLLAR &kp CARET  &kp  &kp BSLH &mo SYMBOL
       >;
     };
     arrow {
@@ -94,6 +85,15 @@
         &trans &trans &kp DOLLAR &kp PERCENT &kp CARET &trans  &none        &trans &trans &trans &trans        &none &kp LEFT_ARROW &kp DOWN_ARROW &kp UP_ARROW &kp RIGHT_ARROW  &trans  &trans
         &trans &trans &kp EXCLAMATION &kp AT &kp HASH &trans                      &trans &trans                     &trans &kp CARET &kp DOLLAR  &trans  &trans &trans
         &trans &trans &trans &trans &trans               &trans &trans &trans &trans &trans &trans              &trans &trans &trans  &trans  &trans
+      >;
+    };
+    keypad {
+      bindings = <
+        &kp EQUAL &kp N1    &kp N2   &kp N3   &kp N4     &kp N5 &trans                                      &trans &kp N6 &kp KP_NUM &kp KP_EQUAL &kp KP_DIVIDE &kp KP_MULTIPLY &kp MINUS
+        &trans &trans &trans &trans &trans &trans  &none                                                    &none &trans  &kp KP_N7  &kp KP_N8    &kp KP_N9     &kp KP_MINUS    &trans
+        &trans &trans &trans &trans &trans &trans  &none               &trans &trans &trans &trans           &none &trans  &kp KP_N4  &kp KP_N5    &kp KP_N6     &kp KP_PLUS     &trans
+        &trans &trans &trans &trans &trans &trans                            &trans &trans                           &trans  &kp KP_N1  &kp KP_N2    &kp KP_N3     &kp KP_ENTER    &trans
+        &trans &trans &trans &trans &trans                   &trans &trans &trans &trans &trans &kp KP_N0              &trans     &trans     &kp KP_DOT    &trans        &trans
       >;
     };
     symbol {
